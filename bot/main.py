@@ -2,7 +2,8 @@
 import nest_asyncio
 nest_asyncio.apply()
 import discord
-
+import os
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 # Define random drop
 def random_drop():
     import numpy, random
