@@ -1,6 +1,6 @@
 # IMPORT DISCORD.PY. ALLOWS ACCESS TO DISCORD'S API.
-import nest_asyncio
-nest_asyncio.apply()
+#import nest_asyncio
+#nest_asyncio.apply()
 import discord
 import os
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
