@@ -7,7 +7,7 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 # Define random drop
 def random_drop():
     import numpy, random
-    tiles_available = ('B3','B4','B5','C2','C3','C4','C5','C6','D2','D3','D4','D5','D6','E2','E3','E4','E5','E6','E7','F2','F3','F4','F5','F6','F7','G2','G3','G4',	'G5','G6')    
+    tiles_available = ('B3','B4','B5','B6','C2','C3','C4','C5','C6','D2','D3','D4','D5','D6','D7','E2','E3','E4','E5','E6','E7','E8','F2','F3','F4','F5','F6','F7','F8','G2','G3','G4',	'G5','G6','G7','G8','H4','H5','H6','H7','H8')    
     rand_tile = random.randint(0, (len(tiles_available)-1))
     return (("You are dropping:{}!").format(tiles_available[rand_tile]))
 
