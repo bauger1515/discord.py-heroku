@@ -43,10 +43,14 @@ async def on_message(message):
     if message.content in message_terms.keys():
         await message.channel.send(message_terms[message.content])      
     elif message.content =="/drop":
-		# SENDS BACK A MESSAGE TO THE CHANNEL.
+	# SENDS BACK A MESSAGE TO THE CHANNEL.
         await message.channel.send(random_drop())
+    elif message.content == "/win":
+	await message.channel.send("Fuck Yeah!, Dubs for everyone!")
+	await message.channel.send("https://tenor.com/view/will-ferrell-yes-win-winning-gif-23766394")
+	
         
-
+https://tenor.com/view/will-ferrell-yes-win-winning-gif-23766394
 
 # EXECUTES THE BOT WITH THE SPECIFIED TOKEN. TOKEN HAS BEEN REMOVED AND USED JUST AS AN EXAMPLE.
 bot.run(DISCORD_TOKEN)
