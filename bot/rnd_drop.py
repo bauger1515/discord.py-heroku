@@ -53,7 +53,7 @@ async def on_message(message):
 	# SENDS BACK A MESSAGE TO THE CHANNEL.
         await message.channel.send(random_drop())
     elif message.content == "/win":
-        await message.channel.send("Fuck Yeah!, Dubs for everyone! \n{}\n{}".format(r"https://tenor.com/view/will-ferrell-yes-win-winning-gif-23766394",r"https://github.com/bauger1515/discord.py-heroku/blob/main/bot/doot-doot_sounds_djhorn.mp3"))
+        await message.channel.send("Fuck Yeah!, Dubs for everyone! \n{}".format(r"https://tenor.com/view/will-ferrell-yes-win-winning-gif-23766394"))
 
 	
         
