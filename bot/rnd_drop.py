@@ -57,7 +57,7 @@ async def on_message(message):
 
 	
         
-https://tenor.com/view/will-ferrell-yes-win-winning-gif-23766394
+
 
 # EXECUTES THE BOT WITH THE SPECIFIED TOKEN. TOKEN HAS BEEN REMOVED AND USED JUST AS AN EXAMPLE.
 bot.run(DISCORD_TOKEN)
