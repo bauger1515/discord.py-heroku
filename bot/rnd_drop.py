@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Feb  9 10:40:29 2023
+
+@author: BAUGER
+"""
+
 # IMPORT DISCORD.PY. ALLOWS ACCESS TO DISCORD'S API.
 #import nest_asyncio
 #nest_asyncio.apply()
@@ -46,7 +53,7 @@ async def on_message(message):
 	# SENDS BACK A MESSAGE TO THE CHANNEL.
         await message.channel.send(random_drop())
     elif message.content == "/win":
-	await message.channel.send("Fuck Yeah!, Dubs for everyone! {}".format("https://tenor.com/view/will-ferrell-yes-win-winning-gif-23766394"))
+        await message.channel.send("Fuck Yeah!, Dubs for everyone! {}".format("https://tenor.com/view/will-ferrell-yes-win-winning-gif-23766394"))
 
 	
         
