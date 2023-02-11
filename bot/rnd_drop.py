@@ -10,7 +10,6 @@ Created on Thu Feb  9 10:40:29 2023
 #nest_asyncio.apply()
 import discord
 import os
-import time
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 # Define random drop
 def random_drop():
