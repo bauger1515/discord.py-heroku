@@ -10,6 +10,7 @@ Created on Thu Feb  9 10:40:29 2023
 #nest_asyncio.apply()
 import discord
 import os
+import time
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 # Define random drop
 def random_drop():
@@ -17,6 +18,8 @@ def random_drop():
     tiles_available = ('B3','B4:Quarry','B5:Port','B6:Port','C2','C3','C4:Quarry','C5:Sattiq Cave Complex','C6','D2','D3:Rohan Oil','D4','D5:Sattiq Cave Complex','D6','D7:Cemetery','D8:Sawah Village','E2:Taraq Village','E3','E4:Zarqwa Hydro','E5','E6','E7','E8','F2:Al Mazrah City','F3:Al Mazrah City','F4','F5','F6:Ahkdar Village','F7:Sarrif Bay','F8:Fortress','G2:Al Mazrah City','G3:Al Mazrah City','G4:Marshland','G5:Al Sharim Pass','G6:Airport','G7:Airport','G8:Fortress','H4','H5','H6','H7:Airport','H8:Airport')    
     rand_tile = random.randint(0, (len(tiles_available)-1))
     return (("You are dropping {}!").format(tiles_available[rand_tile]))
+
+
 
 # GETS THE CLIENT OBJECT FROM DISCORD.PY. CLIENT IS SYNONYMOUS WITH BOT.
 intents = discord.Intents.all()
@@ -55,7 +58,10 @@ async def on_message(message):
     elif message.content == "/win":
         await message.channel.send("Fuck Yeah!, thats a dub!\n{}".format(r"https://tenor.com/view/will-ferrell-yes-win-winning-gif-23766394"))
 
-	
+while(true):
+    on_ready()
+    print("running guild count")
+    time.sleep(60)	
         
 
 
