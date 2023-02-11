@@ -58,11 +58,7 @@ async def on_message(message):
     elif message.content == "/win":
         await message.channel.send("Fuck Yeah!, thats a dub!\n{}".format(r"https://tenor.com/view/will-ferrell-yes-win-winning-gif-23766394"))
 
-while(true):
-    on_ready()
-    print("running guild count")
-    time.sleep(60)	
-        
+     
 
 
 # EXECUTES THE BOT WITH THE SPECIFIED TOKEN. TOKEN HAS BEEN REMOVED AND USED JUST AS AN EXAMPLE.
