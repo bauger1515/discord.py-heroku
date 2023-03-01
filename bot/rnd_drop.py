@@ -14,7 +14,7 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 # Define random drop
 def random_drop():
     import numpy, random
-    tiles_available = ('B3','B4:Quarry','B5:Port','B6:Port','C2','C3','C4:Quarry','C5:Sattiq Cave Complex','C6','D2','D3:Rohan Oil','D4','D5:Sattiq Cave Complex','D6','D7:Cemetery','D8:Sawah Village','E2:Taraq Village','E3','E4:Zarqwa Hydro','E5','E6','E7','E8','F2:Al Mazrah City','F3:Al Mazrah City','F4','F5','F6:Ahkdar Village','F7:Sarrif Bay','F8:Fortress','G2:Al Mazrah City','G3:Al Mazrah City','G4:Marshland','G5:Al Sharim Pass','G6:Airport','G7:Airport','G8:Fortress','H4','H5','H6','H7:Airport','H8:Airport')    
+    tiles_available = ('Passenger Train','Freight Train','B3','B4:Quarry','B5:Port','B6:Port','C2','C3','C4:Quarry','C5:Sattiq Cave Complex','C6','D2','D3:Rohan Oil','D4','D5:Sattiq Cave Complex','D6','D7:Cemetery','D8:Sawah Village','E2:Taraq Village','E3','E4:Zarqwa Hydro','E5','E6','E7','E8','F2:Al Mazrah City','F3:Al Mazrah City','F4','F5','F6:Ahkdar Village','F7:Sarrif Bay','F8:Fortress','G2:Al Mazrah City','G3:Al Mazrah City','G4:Marshland','G5:Al Sharim Pass','G6:Airport','G7:Airport','G8:Fortress','H4','H5','H6','H7:Airport','H8:Airport')    
     rand_tile = random.randint(0, (len(tiles_available)-1))
     return (("You are dropping {}!").format(tiles_available[rand_tile]))
 
