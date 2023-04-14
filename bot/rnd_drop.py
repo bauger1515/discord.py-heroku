@@ -12,6 +12,11 @@ import discord
 import os
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 # Define random drop
+def random_dropres():
+##    import numpy, random
+##    tiles_available = ('Passenger Train','Freight Train','B3','B4:Quarry','B5:Port','B6:Port','C2','C3','C4:Quarry','C5:Sattiq Cave Complex','C6','D2','D3:Rohan Oil','D4','D5:Sattiq Cave Complex','D6','D7:Cemetery','D8:Sawah Village','E2:Taraq Village','E3','E4:Zarqwa Hydro','E5','E6','E7','E8','F2:Al Mazrah City','F3:Al Mazrah City','F4','F5','F6:Ahkdar Village','F7:Sarrif Bay','F8:Fortress','G2:Al Mazrah City','G3:Al Mazrah City','G4:Marshland','G5:Al Sharim Pass','G6:Airport','G7:Airport','G8:Fortress','H4','H5','H6','H7:Airport','H8:Airport')    
+##    rand_tile = random.randint(0, (len(tiles_available)-1))
+    return ("Middle of the circle you fucking donkey!")
 def random_drop():
     import numpy, random
     tiles_available = ('Passenger Train','Freight Train','B3','B4:Quarry','B5:Port','B6:Port','C2','C3','C4:Quarry','C5:Sattiq Cave Complex','C6','D2','D3:Rohan Oil','D4','D5:Sattiq Cave Complex','D6','D7:Cemetery','D8:Sawah Village','E2:Taraq Village','E3','E4:Zarqwa Hydro','E5','E6','E7','E8','F2:Al Mazrah City','F3:Al Mazrah City','F4','F5','F6:Ahkdar Village','F7:Sarrif Bay','F8:Fortress','G2:Al Mazrah City','G3:Al Mazrah City','G4:Marshland','G5:Al Sharim Pass','G6:Airport','G7:Airport','G8:Fortress','H4','H5','H6','H7:Airport','H8:Airport')    
@@ -54,6 +59,9 @@ async def on_message(message):
     elif message.content =="/drop":
 	# SENDS BACK A MESSAGE TO THE CHANNEL.
         await message.channel.send(random_drop())
+    elif message.content =="/drop_res":
+	# SENDS BACK A MESSAGE TO THE CHANNEL.
+        await message.channel.send(random_dropres())        
     elif message.content == "/win":
         await message.channel.send("Fuck Yeah!, thats a dub!\n{}".format(r"https://tenor.com/view/will-ferrell-yes-win-winning-gif-23766394"))
 
